@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - South Park - Survey Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.2/css/bulma.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header>
+  <div class="text-box">
+    <h1 id="title">BUILD YOUR RESUME!!!</h1><hr>
+      <!-- <p id="description">Tell us about your experience with South Park</p> -->
+  </div>
+</header>
+    <div class="container">
+      <form id="survey-form" method="GET">
+      <!-- NAME -->
+        <div class="labels">
+          <label id="name-label" for="name">Full Name</label>
+        </div>
+        <div class="input-tab">
+          <input class="input-field" type="text" id="name" name="name" placeholder="Enter your name" required autofocus>
+        </div>
+
+      <!-- EMAIL -->
+        <div class="labels">
+          <label id="email-label" for="email">Email</label>
+        </div>
+        <div class="input-tab">
+          <input class="input-field" type="email" id="email" name="email" placeholder="email@email.com" required>
+        </div>
+      
+      <!-- AGE -->
+        <div class="labels">
+          <label id="number-label" for="number">Age</label>
+        </div>
+        <div class="input-tab">
+          <input class="input-field" type="number" id="number" name="number" min="1" max="120" placeholder="15" required>
+        </div>
+
+      <!-- PHONE -->
+      <div class="labels">
+        <label>Phone</label>
+      </div>
+      <div class="input-tab">
+        <input class="input-field" type="text" name="phone" required autofocus>
+      </div>
+
+      <!-- address -->
+      <div class="labels">
+        <label>Address</label>
+      </div>
+      <div class="input-tab">
+        <input class="input-field" type="text" name="address" required autofocus>
+      </div>
+
+      <br><br>
+      <div class = "center"><h2>EDUCATIONAL QUALIFICATION</h2></div>
+
+      <div class="labels">
+        <label>Undergraduate degree</label>
+      </div>
+      <div class="input-tab">
+        <input class="input-field" type="text" name="ugd" required autofocus>
+      </div>
+
+      <div class="labels">
+        <label>UG Percentage</label>
+      </div>
+      <div class="input-tab">
+        <input class="input-field" type="text" name="ugp" required autofocus>
+      </div>
+
+      <div class="labels">
+        <label>Postgraduate degree</label>
+      </div>
+      <div class="input-tab">
+        <input class="input-field" type="text" name="pgd" required autofocus>
+      </div>
+
+      <div class="labels">
+        <label>PG Percentage</label>
+      </div>
+      <div class="input-tab">
+        <input class="input-field" type="text" name="pgp" required autofocus>
+      </div>
+
+
+      <!-- EXPERIENCE -->
+      <div class="labels">
+        <label>Experience(in yrs)</label>
+      </div>
+      <div class="input-tab">
+        <input class="input-field" type="text" name="experience" required autofocus>
+      </div>
+
+      <br><br>
+      <div class = "center"><h2>SKILLS</h2></div>
+      <!-- SKILLS -->
+      <div class="labels">
+        <label>Skill 1</label>
+      </div>
+      <div class="input-tab">
+        <input class="input-field" type="text" name="skill1" required autofocus>
+      </div>
+
+      <div class="labels">
+        <label>Skill 2</label>
+      </div>
+      <div class="input-tab">
+        <input class="input-field" type="text" name="skill2" required autofocus>
+      </div>
+
+      <div class="labels">
+        <label>Skill 3</label>
+      </div>
+      <div class="input-tab">
+        <input class="input-field" type="text" name="skill3" required autofocus>
+      </div>
+
+      <div class="labels">
+        <label>Skill 4</label>
+      </div>
+      <div class="input-tab">
+        <input class="input-field" type="text" name="skill4" required autofocus>
+      </div>
+
+      <div class="labels">
+        <label>Skill 5</label>
+      </div>
+      <div class="input-tab">
+        <input class="input-field" type="text" name="skill5" required autofocus>
+      </div>
+
+      <div class="labels">
+        <label>Linked In</label>
+      </div>
+      <div class="input-tab">
+        <input class="input-field" type="text" name="linkin" required autofocus>
+      </div>
+
+
+
+
+          
+         <!-- <div class="labels">
+          <label for="dropdown">How do you watch South Park?</label></div>
+        <div class="input-tab">
+          <select id="dropdown" name="site">
+            <option disabled value selected>Select an option</option>
+            <option value="web">Website</option>
+            <option value="hulu">Hulu</option>
+            <option value="youtube">Youtube</option>
+            <option value="tv">TV</option>
+            <option value="other">Other</option>
+          </select>
+          </div>
+        
+        <div class="labels">
+          <label>How much do you like South Park?</label></div>
+        <div class="input-tab">
+            <input type="radio" name="radio-button" value="love">I love it!<br>
+            <input type="radio" name="radio-button" value="like">I like it<br>
+            <input type="radio" name="radio-button" value="ok">It's ok<br>
+            <input type="radio" name="radio-button" value="nah">Not really<br>
+        </div>
+        
+        <div class="labels">
+          <label for="dropdown">How many seasons of South Park have you watched?</label></div>
+        <div class="input-tab">
+          <select id="dropdown" name="seasons">
+            <option disabled value selected>Select an option</option>
+            <option value="<=5">0-5</option>
+            <option value="<=10">6-10</option>
+            <option value="<=15">10-15</option>
+            <option value="<=21">15-21</option>
+          </select>
+        </div>
+        
+        <div class="labels">
+          <label>Who do you watch South Park with?<br>(Check all that apply):</label></div>
+        <div class="input-tab">
+          <input type="checkbox" name="alone" value="alone">Alone<br>
+          <input type="checkbox" name="friends" value="fr">Friends<br>
+          <input type="checkbox" name="family" value="fam">Family<br>
+          <input type="checkbox" name="partner" value="fam">Partner<br>
+          <input type="checkbox" name="other" value="other">Other<br>
+        </div>        
+        
+        <div class="labels">
+          <label for="comments">Tell us more about your favorite character(s) or episode(s)</label></div>
+        <div class="input-tab">
+          <textarea class="input-field" id="comments" name="comments" rows="10" cols="40" placeholder="Your comments..."></textarea></div> -->
+        
+        <div class="btn">
+          <button id="submit" type="submit">Submit</button>
+        </div>
+        
+      </form>
+    </div>
+
+<!-- <footer>
+  <div class="contact">
+    <a href="https://github.com/linh4" target="_blank">
+      <span class="icon"><i class="fa fa-github"></i></span></a>
+    <a href="https://codepen.io/linh4/" target="_blank">
+      <span class="icon"><i class="fa fa-codepen"></i></span></a>
+    <a href="https://www.freecodecamp.org/linh4" target="_blank">
+      <span class="icon"><i class="fa fa-free-code-camp"></i></span></a>
+  </div>
+      <p>&copy 2018 Linh Huynh</a></p>
+</footer> -->
+<!-- partial -->
+  
+</body>
+</html>
